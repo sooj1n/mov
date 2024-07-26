@@ -4,6 +4,9 @@
 ```
 # main
 $ pip install git+https://github.com/sooj1n/mov.git
+
+# branch
+$ pip install git_https://github.com/sooj1n/mov.git@<BRANCH_NAME>
 ```
 ### start dev
 ```
