@@ -13,7 +13,15 @@ $ pip install git_https://github.com/sooj1n/mov.git@<BRANCH_NAME>
 $ git clone <URL>
 $ cd <DIR>
 
-$ $ option
+$ option
 $ pdm venv create
 $ source .venv/bin/activate
+$ pytest
+```
+
+### setting env
+```bash
+cat ~/.zshrc | tail -n 3
+# MY_ENV
+export MOVIE_API_KEY="<KEY>"
 ```
