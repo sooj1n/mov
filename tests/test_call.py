@@ -1,5 +1,8 @@
-from src.mov.api.call import gen_url, req, get_key, req2list, list2df, save2df
+from src.mov.api.call import gen_url, req, get_key, req2list, list2df, save2df, echo
 import pandas as pd
+
+def test_echo():
+    assert echo('Yaho')=='Yaho'
 
 
 def test_save2df():
