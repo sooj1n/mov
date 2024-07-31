@@ -23,7 +23,8 @@ def save2df(load_dt='20120101', url_param={}):
     df['load_dt'] = load_dt
     print(df.head(5))
     df.to_parquet('~/tmp/test_parquet',partition_cols=['load_dt'])
-    return df
+    url = gen_url(load_dt, url_param)
+    return df, url
 
 def list2df(load_dt='20120101'):
     l = req2list(load_dt)
