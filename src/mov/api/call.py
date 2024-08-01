@@ -56,7 +56,7 @@ def gen_url(load_dt="20120101", url_param={}):
     base_url = "http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json"
     key = get_key()
     url= f"{base_url}?key={key}&targetDt={load_dt}"
-    for k,v in req_val.items():
+    for k,v in url_param.items():
          #url = url + f"&multiMovieYn=N"
          url = url + f"&{k}={v}"
     
