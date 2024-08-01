@@ -34,7 +34,7 @@ def list2df(load_dt='20120101', url_param={}):
     return df
 
 def req2list(load_dt='20120101',url_param={}) -> list:
-    _,data = req(load_dt)
+    _,data = req(load_dt,url_param)
     l=data['boxOfficeResult']['dailyBoxOfficeList']
     return l
 
