@@ -22,7 +22,7 @@ def save2df(load_dt='20120101', url_param={}):
     # 아래 파일 저장 시 load_dt 기분으로 파티셔닝
     df['load_dt'] = load_dt
     #print(df.head(5))
-    df.to_parquet('~/tmp/test_parquet',partition_cols=['load_dt'])
+    #df.to_parquet('~/tmp/test_parquet',partition_cols=['load_dt'])
     #url = gen_url(load_dt, url_param)
     print('*'*10)
     print(df)
